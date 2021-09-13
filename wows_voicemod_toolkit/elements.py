@@ -1,4 +1,3 @@
-# define the voice mod sub class (VMSC)
 
 from typing import List
 
