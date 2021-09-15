@@ -1,32 +1,44 @@
-
 import os
 import json
+import copy
+from typing import Dict
 import xml.dom.minidom as xml
 
 import wows_voicemod_toolkit.elements
+import wows_voicemod_toolkit.utils
 
 
 class wowsVoiceMod:
-
     name: str
     src_file_path: str
-    file_data_flag: bool
+    flag_file_data: bool
     mod_class: elements.AudioModification
+    flag_air_support: dict
 
     def __init__(self, filepath: str, filetype: str = None):
+        self.flag_air_support = {'is_check': False,
+                                 'is_have_reload': False,
+                                 'is_have_takeoff': False,
+                                 'is_adapt': False}
+
         self.src_file_path = os.path.abspath(filepath)
         _, filename_full = os.path.split(self.src_file_path)
         self.name, file_point_ext = os.path.splitext(filename_full)
 
         if (filetype is None and file_point_ext.find('json') != -1) \
                 or (filetype is not None and filetype.find('json') != -1):
-            self.file_data_flag = False
+            self.flag_file_data = False
             self._read_json()
 
         elif (filetype is None and file_point_ext.find('xml') != -1) \
                 or (filetype is not None and filetype.find('xml') != -1):
-            self.file_data_flag = True
+            self.flag_file_data = True
             self._read_xml()
+
+        elif (filetype is None and file_point_ext.__len__() == 0) \
+                or (filetype is not None and filetype.find('folder') != -1):
+            self.flag_file_data = True
+            self._read_folder()
 
         else:
             print('file type wrong')
@@ -34,6 +46,60 @@ class wowsVoiceMod:
 
     def rename(self, name: str):
         self.name = name
+
+    def check_air_support(self) -> bool:
+        flag_have = False
+        for event_class in self.mod_class.external_event:
+            if event_class.name == 'Play_UI_Reload_Air_Support':
+                self.flag_air_support['is_have_reload'] = True
+                flag_have = True
+            elif event_class.name == 'Play_Ship_Weapon_AirSupport_Shot':
+                self.flag_air_support['is_have_takeoff'] = True
+                flag_have = True
+        self.flag_air_support['is_check'] = flag_have
+        return True
+
+    def adapt_air_support(self) -> bool:
+        self.check_air_support()
+        for event_class in self.mod_class.external_event:
+            if self.flag_air_support['is_have_reload'] and event_class.name == 'Play_UI_Reload_Air_Support':
+                event_class.external_id = 'VO_Airsupport_Reload'
+            if self.flag_air_support['is_have_takeoff'] and event_class.name == 'Play_Ship_Weapon_AirSupport_Shot':
+                event_class.external_id = 'VO_Airsupport_Takeoff'
+        self.flag_air_support['is_adapt'] = True
+        return True
+
+    def sort(self, reverse: bool = False) -> None:
+
+        def event_sort_key(element: elements.ExternalEvent):
+            return element.name
+
+        def state_sort_key(element: elements.State):
+            return element.name + '__' + element.value
+
+        def file_sort_key(element: elements.File):
+            return element.name
+
+        def path_sort_key(element: elements.Path):
+            key = ''
+            for state_class in element.state:
+                key = key + '___' + state_class.name + '__' + state_class.value
+            return key
+
+        self.mod_class.external_event.sort(key=event_sort_key)
+        for event_class in self.mod_class.external_event:
+            for path_class in event_class.path:
+                path_class.state.sort(key=state_sort_key)
+                path_class.file.sort(key=file_sort_key)
+            event_class.path.sort(key=path_sort_key)
+
+        return
+
+    def delete_file(self) -> None:
+        for event_class in self.mod_class.external_event:
+            for path_class in event_class.path:
+                path_class.file = []
+        return
 
     def _read_xml(self) -> bool:
         tree = xml.parse(self.src_file_path)
@@ -75,7 +141,7 @@ class wowsVoiceMod:
         return True
 
     def write_xml(self, path) -> bool:
-        write_path = os.path.abspath(path + self.name + '.xml')
+        write_path = os.path.abspath(path + '/mod.xml')
 
         tree = xml.Document()
 
@@ -239,7 +305,49 @@ class wowsVoiceMod:
         return True
 
     def _read_folder(self) -> bool:
-        pass
+
+        mod_path = os.path.abspath(self.src_file_path)
+
+        self.mod_class = elements.AudioModification(os.path.basename(mod_path))
+
+        containers = ['Voice', 'SFX', 'Loop']
+
+        for container in containers:
+            container_abs_path = os.path.join(mod_path, container)
+            for event_folder_name in next(os.walk(container_abs_path))[1]:
+                name = 'Play_' + event_folder_name
+                cname = container
+                eid = container[0] + event_folder_name
+                event_class = elements.ExternalEvent(name, cname, eid)
+
+                event_abs_path = os.path.join(container_abs_path, event_folder_name)
+                for path_path, dirnames, file_names in os.walk(event_abs_path):
+                    if file_names.__len__() > 0 and dirnames.__len__() == 0:
+                        path_class = elements.Path()
+
+                        state_rel_path = os.path.relpath(path_path, event_abs_path)
+                        state_rel_path = utils.anti_slash_path(state_rel_path)
+
+                        if state_rel_path != '.':
+                            states = state_rel_path.split('\\')
+                            for state in states:
+                                state_pair = state.split('__')
+                                name = state_pair[0]
+                                value = state_pair[1]
+                                state_class = elements.State(name, value)
+                                path_class.append_state(state_class)
+
+                        for file_name in file_names:
+                            file_rel_name = os.path.relpath(os.path.join(path_path, file_name), mod_path)
+                            file_rel_name = utils.slash_path(file_rel_name)
+                            file_class = elements.File(file_rel_name)
+                            path_class.append_file(file_class)
+
+                        event_class.append_path(path_class)
+
+                self.mod_class.append_external_event(event_class)
+
+        return True
 
     def write_folder(self, path) -> bool:
         flags = {'Voice': False, 'SFX': False, 'Loop': False}
@@ -279,4 +387,3 @@ class wowsVoiceMod:
                         if not os.path.exists(state_path):
                             os.mkdir(state_path)
         return True
-

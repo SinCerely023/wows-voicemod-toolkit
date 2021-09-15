@@ -9,6 +9,7 @@ if __name__ == '__main__':
 
     if not os.path.exists(path_in):
         print("file '" + path_in + "' not existed, please check\n")
+        os.system('pause')
         exit()
 
     if not os.path.isfile(path_in):
@@ -19,12 +20,14 @@ if __name__ == '__main__':
 
     if not os.path.exists(path_in):
         print("file '" + path_in + "' not existed, please check\n")
+        os.system('pause')
         exit()
 
     try:
         wvm = wowsVoiceMod(path_in)
     except:
         print("read file '" + path_in + "' error, please check\n")
+        os.system('pause')
         exit()
     else:
         print('read file successful\n')
@@ -35,10 +38,14 @@ if __name__ == '__main__':
 
         try:
             wvm.rename(wvm.mod_class.name)
-            wvm.write_folder(path_in)
+            if not wvm.write_folder(path_in):
+                os.system('pause')
+                exit()
         except:
             print('create folders error, please check')
+            os.system('pause')
             exit()
         else:
             print('create folders successful, press any key to exit')
             os.system('pause')
+            exit()
