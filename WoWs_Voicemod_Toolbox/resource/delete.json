@@ -1,0 +1,75 @@
+{
+	"Name": "delete",
+	"Kernel": "beta",
+	"Version": "0.11.5.0",
+	"ExternalEvent": [
+		{
+			"Name": "Play_VO_Highschool_Fleet_Capture_Fort",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Highschool_Fleet_Capture_Fort",
+			"Path": []
+		},
+		{
+			"Name": "Play_VO_Priority_Target",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Priority_Target",
+			"Path": []
+		},
+		{
+			"Name": "Play_VO_Prompt",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Prompt",
+			"Path": []
+		},
+		{
+			"Name": "Play_VO_PVE_Message",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_PVE_Message",
+			"Path": []
+		},
+		{
+			"Name": "Play_VO_Quick_Commands",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Quick_Commands",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_SOS"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Quick_Commands_Receive",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Quick_Commands_Receive",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_SOS"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Teamkill_Punishment",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Teamkill_Punishment",
+			"Path": []
+		},
+		{
+			"Name": "Play_UI_Alarm_Map_Border",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Alarm_Map_Border",
+			"Path": []
+		}
+	]
+}

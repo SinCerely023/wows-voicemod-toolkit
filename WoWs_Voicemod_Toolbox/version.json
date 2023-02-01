@@ -1,0 +1,19 @@
+{
+  "version": "beta",
+  "game_version": "0.11.5.0",
+  "game_version_compatible": "0.11.2.0",
+  "forum_url_asia": "https://worldofwarships.asia/",
+  "forum_url_na": "https://worldofwarships.com/",
+  "resource": [
+    "delete.json",
+    "modified_eid.json",
+    "multi_state_pilot.json",
+    "multi_state_result.json",
+    "rename.json",
+    "std.json",
+    "TISHINA.wem"
+  ],
+  "unpack_md5": "f4e25667defa045eaafe0972a951606f",
+  "update_url_resource": "https://raw.githubusercontent.com/SinCerely023/wows-voicemod-toolkit/main/update.json",
+  "update_url_unpack": ""
+}

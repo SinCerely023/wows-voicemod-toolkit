@@ -1,0 +1,86 @@
+{
+	"Name": "multi_state_pilot",
+	"Kernel": "beta",
+	"Version": "0.11.5.0",
+	"ExternalEvent": [
+		{
+			"Name": "Play_VO_Pilots_Status",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Pilots_Status",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "ATTACK_STARTED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "UNDER_ATTACK"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "Ready"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "TAKEOFF_ENDED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "AtPos"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "LANDING_INITIATED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "TangoDown"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "Destroy"
+						}
+					],
+					"File": []
+				}
+			]
+		}
+	]
+}

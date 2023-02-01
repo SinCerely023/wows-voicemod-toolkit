@@ -1,12 +1,16 @@
-# test
-/test
+# my
+/*
+!/WoWs_Voicemod_Toolbox/
+
+/WoWs_Voicemod_Toolbox/*
+!/WoWs_Voicemod_Toolbox/version.json
+!/WoWs_Voicemod_Toolbox/resource
 
 # pycharm
 /.idea
 
 # misc 
 .DS_Store
-
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

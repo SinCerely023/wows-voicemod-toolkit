@@ -1,6 +1,6 @@
 import os
 
-from wows_voicemod_toolkit import wowsVoiceMod
+from src.VoiceoverModKernel import VoiceoverModKernel
 
 if __name__ == '__main__':
 
@@ -13,7 +13,7 @@ if __name__ == '__main__':
         exit()
 
     try:
-        wvm = wowsVoiceMod(path_in)
+        wvm = VoiceoverModKernel(path_in)
     except:
         print("read directory '" + path_in + "' error, please check\n")
         os.system('pause')
@@ -23,7 +23,7 @@ if __name__ == '__main__':
         print("the name of mod is '" + wvm.mod_class.name + "'\n")
 
         try:
-            wvm.rename(wvm.mod_class.name)
+            wvm.rename_source(wvm.mod_class.name)
             wvm.adapt_air_support()
             wvm.write_xml(path_in)
         except:

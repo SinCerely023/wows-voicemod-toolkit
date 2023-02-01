@@ -1,0 +1,41 @@
+{
+	"Name": "multi_state_result",
+	"Kernel": "beta",
+	"Version": "0.11.5.0",
+	"ExternalEvent": [
+		{
+			"Name": "Play_UI_Result_Stinger",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Result_Stinger",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "Battle_Status_Result",
+							"Value": "Battle_Status_Result_Draw"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Battle_Status_Result",
+							"Value": "Battle_Status_Result_Lose"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Battle_Status_Result",
+							"Value": "Battle_Status_Result_Win"
+						}
+					],
+					"File": []
+				}
+			]
+		}
+	]
+}

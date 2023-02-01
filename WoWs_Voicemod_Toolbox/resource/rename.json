@@ -1,0 +1,92 @@
+{
+	"Name": "rename",
+	"Kernel": "beta",
+	"Version": "0.11.5.0",
+	"ExternalEvent": [
+		["Play_GoodHit","Play_VO_Hit_Feedback_Good_Hit"],
+		["Play_Avatar_Damage","Play_VO_Ship_Avatar_Flooding"],
+		["Play_Torpedo_Danger","Play_VO_Ship_Alarms_Torpedo_Danger"],
+		["Play_Autopilot","Play_VO_Autopilot"],
+		["Play_PriorityTarget","Play_VO_Priority_Target"],
+		["Play_DominationStatus","Play_VO_Domination_Status"],
+		["Play_Fire","Play_VO_Fire_Alarm"],
+		["Play_FriendlyHit","Play_VO_Friendly_Hit"],
+		["Play_Teamkill_punishment","Play_VO_Teamkill_Punishment"],
+		["Play_quick_commands","Play_VO_Quick_Commands"],
+		["Play_quick_commands_receive","Play_VO_Quick_Commands_Receive"],
+		["Play_Frags","Play_VO_Frags"],
+		["Play_Pilots_Status","Play_VO_Pilots_Status"],
+		["Play_DoubleKill","Play_VO_DoubleKill"],
+		["Play_FirstKill","Play_VO_FirstKill"],
+		["Play_Timer5","Play_VO_Timer_5"],
+		["Play_MGshot","Play_VO_Highschool_Fleet_MG_Shot"],
+		["Play_CaptureFort","Play_VO_Highschool_Fleet_Capture_Fort"],
+		["Play_Capture_Fort","Play_VO_Highschool_Fleet_Capture_Fort"],
+		["Play_TAshot","Play_VO_Highschool_Fleet_TA_shot"],
+		["Play_TorpedoHit","Play_VO_Highschool_Fleet_Torpedo_Hit"],
+		["Play_Result","Play_UI_Result_Stinger"],
+		["Play_Help","Play_UI_Consumable"],
+		["Play_Help_Interrupted","Play_UI_Consumable_Interrupted"],
+		["Play_Help_End","Play_UI_Consumable_End"],
+		["Play_LetsBatlle","Play_Start_Battle"],
+		["Play_UI_Defective_Modules","Play_UI_Alarm_Defective_Modules"],
+		["Play_Blue_Stripe","Play_UI_Alarm_Map_Border"],
+		["Play_Death","Play_Damage_Death"],
+		["Play_Detection_enemy","Play_VO_Detection_Enemy"],
+		["Play_Last_Hope","Play_VO_Last_Hope"],
+		["Play_WOWS_Weather_ChangedFXSS","Play_UI_Alarm_Weather_Changed"]
+	],
+	"State": {
+		"Play_VO_Ship_Avatar_Flooding": [
+			["Debuff","CriticalFlooding","VO_Damage","VO_Damage_Critical_Flooding"]
+		],
+		"Play_VO_Ship_Alarms_Torpedo_Danger": [
+			["Torpedo_Location","Torpedo_Ahead","VO_Torpedo_Location","Torpedo_Ahead"],
+			["Torpedo_Location","Torpedo_Back","VO_Torpedo_Location","Torpedo_Back"],
+			["Torpedo_Location","Torpedo_Left","VO_Torpedo_Location","Torpedo_Left"],
+			["Torpedo_Location","Torpedo_Right","VO_Torpedo_Location","Torpedo_Right"]
+		],
+		"Play_VO_Autopilot": [
+			["Autopilot","Checkpoint","VO_Autopilot","VO_Autopilot_Checkpoint"],
+			["Autopilot","End","VO_Autopilot","VO_Autopilot_End"],
+			["Autopilot","Off","VO_Autopilot","VO_Autopilot_Off"],
+			["Autopilot","On","VO_Autopilot","VO_Autopilot_On"]
+		],
+		"Play_VO_Domination_Status": [
+			["Domination","D_Ally","VO_Domination","VO_Domination_Advantage_Ally"],
+			["Domination","D_Enemy","VO_Domination","VO_Domination_Advantage_Enemy"],
+			["Domination","W_Ally","VO_Domination","VO_Domination_Close_Win_Ally"],
+			["Domination","W_Enemy","VO_Domination","VO_Domination_Close_Win_Enemy"]
+		],
+		"Play_VO_Quick_Commands": [
+			["quick_commands",null,"VO_Quick_Commands",null]
+		],
+		"Play_VO_Quick_Commands_Receive": [
+			["quick_commands",null,"VO_Quick_Commands",null]
+		],
+		"Play_VO_Pilots_Status": [
+			["PlaneStatus",null,"VO_Plane_Status",null]
+		],
+		"Play_UI_Result_Stinger": [
+			["Result","Draw","Battle_Status_Result","Battle_Status_Result_Draw"],
+			["Result","Lose","Battle_Status_Result","Battle_Status_Result_Lose"],
+			["Result","Win","Battle_Status_Result","Battle_Status_Result_Win"]
+		],
+		"Play_UI_Alarm_Defective_Modules": [
+			["ModuleType","Engine","Module_Type","Module_Type_Engine"],
+			["ModuleType","MainGun","Module_Type","Module_Type_MG"],
+			["ModuleType","SteeringWheel","Module_Type","Module_Type_Steering_Wheel"],
+			["ModuleType","TorpedoGun","Module_Type","Module_Type_TA"],
+			["ModuleState","Dead","Module_State","Module_State_Dead"],
+			["ModuleState","Crit","Module_State","Module_State_Crit"]
+		],
+		"Play_VO_Detection_Enemy": [
+			["DetectionEnemy","AirCarrier","VO_Spotting","VO_Spotting_AirCarrier"],
+			["DetectionEnemy","Battleship","VO_Spotting","VO_Spotting_Battleship"],
+			["DetectionEnemy","Cruiser","VO_Spotting","VO_Spotting_Cruiser"],
+			["DetectionEnemy","Destroyer","VO_Spotting","VO_Spotting_Destroyer"],
+			["DetectionEnemy","Multi","VO_Spotting","VO_Spotting_Multi"],
+			["DetectionEnemy","Submarine","VO_Spotting","VO_Spotting_Submarine"]
+		]
+	}
+}

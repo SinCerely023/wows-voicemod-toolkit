@@ -1,6 +1,6 @@
 import os
 
-from wows_voicemod_toolkit import wowsVoiceMod
+from src.VoiceoverModKernel import VoiceoverModKernel
 
 if __name__ == '__main__':
 
@@ -24,7 +24,7 @@ if __name__ == '__main__':
         exit()
 
     try:
-        wvm = wowsVoiceMod(path_in)
+        wvm = VoiceoverModKernel(path_in)
     except:
         print("read file '" + path_in + "' error, please check\n")
         os.system('pause')
@@ -37,8 +37,8 @@ if __name__ == '__main__':
         path_in = os.path.abspath(path_in)
 
         try:
-            wvm.rename(wvm.mod_class.name)
-            if not wvm.write_folder(path_in):
+            wvm.rename_source(wvm.mod_class.name)
+            if not wvm.write_folders(path_in):
                 os.system('pause')
                 exit()
         except:

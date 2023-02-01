@@ -1,5 +1,7 @@
 {
   "version": "beta",
+  "forum_url_asia": "https://worldofwarships.asia/",
+  "forum_url_na": "https://worldofwarships.com/",
   "resource": [
     "delete.json",
     "modified_eid.json",

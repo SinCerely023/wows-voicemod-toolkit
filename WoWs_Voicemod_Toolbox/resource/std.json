@@ -1,0 +1,3689 @@
+{
+	"Name": "std",
+	"Kernel": "beta",
+	"Version": "0.11.5.0",
+	"ExternalEvent": [
+		{
+			"Name": "Play_Damage_Death",
+			"ContainerName": "Voice",
+			"ExternalId": "VDamage_Death",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_Ship_Weapon_AirSupport_Shot",
+			"ContainerName": "Voice",
+			"ExternalId": "VShip_Weapon_AirSupport_Shot",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_Ship_Weapon_DC_Roll_Shot",
+			"ContainerName": "Voice",
+			"ExternalId": "VShip_Weapon_DC_Roll_Shot",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_Ship_Weapon_DC_Shoot_Shot",
+			"ContainerName": "Voice",
+			"ExternalId": "VShip_Weapon_DC_Shoot_Shot",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_Ship_Weapon_DC_Slide_Shot",
+			"ContainerName": "Voice",
+			"ExternalId": "VShip_Weapon_DC_Slide_Shot",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_Start_Battle",
+			"ContainerName": "Voice",
+			"ExternalId": "VStart_Battle",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_Submarine_Dive_Limit",
+			"ContainerName": "Voice",
+			"ExternalId": "VSubmarine_Dive_Limit",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_UI_Alarm_Defective_Modules",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Alarm_Defective_Modules",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "Module_Type",
+							"Value": "Module_Type_Engine"
+						},
+						{
+							"Name": "Module_State",
+							"Value": "Module_State_Crit"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Module_Type",
+							"Value": "Module_Type_MG"
+						},
+						{
+							"Name": "Module_State",
+							"Value": "Module_State_Crit"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Module_Type",
+							"Value": "Module_Type_MG"
+						},
+						{
+							"Name": "Module_State",
+							"Value": "Module_State_Dead"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Module_Type",
+							"Value": "Module_Type_Steering_Wheel"
+						},
+						{
+							"Name": "Module_State",
+							"Value": "Module_State_Crit"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Module_Type",
+							"Value": "Module_Type_TA"
+						},
+						{
+							"Name": "Module_State",
+							"Value": "Module_State_Dead"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_UI_Alarm_Map_Border",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Alarm_Map_Border",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_UI_Alarm_Weather_Changed",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Alarm_Weather_Changed",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "Ambient_Battle_Weather_Type",
+							"Value": "Ambient_Battle_Weather_Type_Storm"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Ambient_Battle_Weather_Type",
+							"Value": "Ambient_Battle_Weather_Type_Snowstorm"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_UI_Consumable",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Consumable",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "Fighter"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "AirDefenseDisp"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "Smoke"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "Scout"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "Engine"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "CallFighters"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_UI_Consumable_End",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Consumable_End",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "AirDefenseDisp"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "Smoke"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "CrashCrew"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "Engine"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "Scout"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "Fighter"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_UI_Consumable_Interrupted",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Consumable_Interrupted",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "Fighter"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "HelpType",
+							"Value": "Scout"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_UI_Reload_Air_Support",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Reload_Air_Support",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_UI_Result_Stinger",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Result_Stinger",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_UI_Submarine_Alarm_Energy_Danger",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Submarine_Alarm_Energy_Danger",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_UI_Submarine_Detected",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Submarine_Detected",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_UI_Submarine_Energy_Full",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Submarine_Energy_Full",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_UI_Submarine_Energy_Over",
+			"ContainerName": "Voice",
+			"ExternalId": "VUI_Submarine_Energy_Over",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Autopilot",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Autopilot",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "VO_Autopilot",
+							"Value": "VO_Autopilot_On"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Autopilot",
+							"Value": "VO_Autopilot_End"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Autopilot",
+							"Value": "VO_Autopilot_Checkpoint"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Autopilot",
+							"Value": "VO_Autopilot_Off"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Detection_Enemy",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Detection_Enemy",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "VO_Spotting",
+							"Value": "VO_Spotting_AirCarrier"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Spotting",
+							"Value": "VO_Spotting_Battleship"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Spotting",
+							"Value": "VO_Spotting_Cruiser"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Spotting",
+							"Value": "VO_Spotting_Destroyer"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Spotting",
+							"Value": "VO_Spotting_Multi"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Spotting",
+							"Value": "VO_Spotting_Submarine"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Domination_Status",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Domination_Status",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "VO_Domination",
+							"Value": "VO_Domination_Advantage_Enemy"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Domination",
+							"Value": "VO_Domination_Advantage_Ally"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Domination",
+							"Value": "VO_Domination_Close_Win_Enemy"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Domination",
+							"Value": "VO_Domination_Close_Win_Ally"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_DoubleKill",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_DoubleKill",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Fire_Alarm",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Fire_Alarm",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "isPlayer",
+							"Value": "True"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_FirstKill",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_FirstKill",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Frags",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Frags",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "isPlayer",
+							"Value": "False"
+						},
+						{
+							"Name": "Damage_Frag_Type",
+							"Value": "Damage_Frag_Destroyer"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "isPlayer",
+							"Value": "False"
+						},
+						{
+							"Name": "Damage_Frag_Type",
+							"Value": "Damage_Frag_Cruiser"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "isPlayer",
+							"Value": "False"
+						},
+						{
+							"Name": "Damage_Frag_Type",
+							"Value": "Damage_Frag_AirCarrier"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "isPlayer",
+							"Value": "False"
+						},
+						{
+							"Name": "Damage_Frag_Type",
+							"Value": "Damage_Frag_Battleship"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "isPlayer",
+							"Value": "True"
+						},
+						{
+							"Name": "Damage_Frag_Type",
+							"Value": "Damage_Frag_Destroyer"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "isPlayer",
+							"Value": "True"
+						},
+						{
+							"Name": "Damage_Frag_Type",
+							"Value": "Damage_Frag_Cruiser"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "isPlayer",
+							"Value": "True"
+						},
+						{
+							"Name": "Damage_Frag_Type",
+							"Value": "Damage_Frag_AirCarrier"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "isPlayer",
+							"Value": "True"
+						},
+						{
+							"Name": "Damage_Frag_Type",
+							"Value": "Damage_Frag_Battleship"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "isPlayer",
+							"Value": "False"
+						},
+						{
+							"Name": "Damage_Frag_Type",
+							"Value": "Damage_Frag_Submarine"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "isPlayer",
+							"Value": "True"
+						},
+						{
+							"Name": "Damage_Frag_Type",
+							"Value": "Damage_Frag_Submarine"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Friendly_Hit",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Friendly_Hit",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Highschool_Fleet_Capture_Fort",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Highschool_Fleet_Capture_Fort",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Highschool_Fleet_MG_Shot",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Highschool_Fleet_MG_Shot",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Highschool_Fleet_TA_shot",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Highschool_Fleet_TA_shot",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Highschool_Fleet_Torpedo_Hit",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Highschool_Fleet_Torpedo_Hit",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Hit_Feedback_Good_Hit",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Hit_Feedback_Good_Hit",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Last_Hope",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Last_Hope",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Pilots_Status",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Pilots_Status",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Bomber"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "TAKEOFF_ENDED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Bomber"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "AtPos"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Bomber"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "Destroy"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Bomber"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "ATTACK_STARTED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Bomber"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "LANDING_INITIATED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Bomber"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "Ready"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Bomber"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "TangoDown"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Bomber"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "UNDER_ATTACK"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Fighter"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "TAKEOFF_ENDED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Fighter"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "AtPos"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Fighter"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "Destroy"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Fighter"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "ATTACK_STARTED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Fighter"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "LANDING_INITIATED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Fighter"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "Ready"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Fighter"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "TangoDown"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Fighter"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "UNDER_ATTACK"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "FighterCons"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "Destroy"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "FighterCons"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "LANDING_INITIATED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Scout"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "Destroy"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Scout"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "LANDING_INITIATED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Torpedo"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "TAKEOFF_ENDED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Torpedo"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "AtPos"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Torpedo"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "Destroy"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Torpedo"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "ATTACK_STARTED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Torpedo"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "LANDING_INITIATED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Torpedo"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "Ready"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Torpedo"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "TangoDown"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "Plane_Type",
+							"Value": "Torpedo"
+						},
+						{
+							"Name": "VO_Plane_Status",
+							"Value": "UNDER_ATTACK"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Priority_Target",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Priority_Target",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Prompt",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Prompt",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_03"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_04"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_05"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_06"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_07"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_08"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_09"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_10"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_11"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_12"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_13"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_14"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_15"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_16"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_17"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_18"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_19"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_20"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_21"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_22"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_23"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_24"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_25"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_26"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_27"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_31"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_01"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_33"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_34"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_35"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_36"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_37"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_38"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_39"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_40"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_41"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_42"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_45"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_43"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_44"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Prompt_ID",
+							"Value": "VO_Prompt_ID_46"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_PVE_Message",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_PVE_Message",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MESSAGE_ANNIHILATION"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MESSAGE_DEFENCE_AREA_TRUE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MESSAGE_DEFENCE_AREA_TRUE2_TEMP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MESSAGE_ENEMY_DAMAGE_TRANSPORT_START"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MESSAGE_ENEMY_SHIPS_I_SEE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MESSAGE_EXECUTE_ORDER"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MESSAGE_FIND_CONVOY"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MESSAGE_FOUND_ENEMY_CONVOY"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MESSAGE_FOUND_ENEMY_SHIPS"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MESSAGE_FOUND_WAVE2"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MESSAGE_MOVE_RIDGE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MESSAGE_NEW_TASK_DEFENCE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MESSAGE_RUN"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_ENEMY_REINFORCEMENT_TOP_SPAWN_01"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_ENEMY_REINFORCEMENT_TOP_SPAWN_02"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_ENEMY_REINFORCEMENT_TOP_SPAWN_03"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_ENEMY_REINFORCEMENT_TOP_SPAWN_04"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_ENEMY_REINFORCEMENT_TOP_SPAWN_05"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_LEEROY_CHICKEN"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_LEEROY_DIED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_LEEROY_GETS_UGLY"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_LEEROY_START_ESCAPE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_LEEROYY"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_MAIN_TASK_COMPLETED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_MAIN_TASK_FAILED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_MAIN_TASK_PHRASE_1"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_02_MAIN_TASK_PROGRESSED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_011_CARRIER_GO_TO"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_012_CARRIER_GO_TO"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_013_RUNNER_GO"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_014_CARRIER_GO_TWO"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_015_CARRIER_GO_TREE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_016_WAYPAUSE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_017_WAYPAUSE_END"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_019_REGEN_ON"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_021_JAPAN_RADIO"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_022_PLANES_S"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_023_BOOST"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CSM_001_BRIEFING"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CSM_002_BRIEFING"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CSM_006_MAIN_TASK_FAIL_ALL_PLAYERS_DIE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CSM_007_MAIN_TASK_COMPLETE_CARRIER_SAVE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CSM_009_FIXERISDEAD"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CSM_010_CARRIERISDEAD"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CSM_011_TASK_KILL_CARRIERS"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_0022_WARNING_OF_TEAM"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_0023_WARNING_OF_TEAM"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_0024_WARNING_OF_TEAM"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_0031_DEFENSE_MAIN_TASK_SUCCESS"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_0032_DEFENSE_MAIN_TASK_SUCCESS"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_004_DEFENSE_MAIN_TASK_FAIL1"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_005_DEFENSE_MAIN_TASK_FAIL2"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_008_DEFENSE_SECONDARY_TASK_1_GOOD"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_010_MESSAGE_DEAD_ENEMYS_FORTS"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_011_ENEMYS_AIRCR_GO_TO_BATTLE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_025_NEW_POST_NORTH_TEMP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_026_NEW_POST_WEST"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_026_NEW_POST_WEST1"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_026_NEW_POST_WEST2"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_026_NEW_POST_WEST3"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_026_NEW_POST_WEST4"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_026_NEW_POST_WEST5"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_026_NEW_POST_WEST6_TEMP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_026_NEW_POST_WEST7"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_0291_ENEMYS_BOSS_1_TEMP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_029_DEAD_ENEMYS_IZUMO"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_032_ENEMYS_AVIR_1_TEMP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_032_ENEMYS_AVIR_2_TEMP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_034_ALLY_AVIR_1_TEMP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_034_ALLY_AVIR_2_TEMP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_034_ALLY_AVIR_3_TEMP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_035_ATTACK_2"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_035_ATTACK_3"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_035_ATTACK_BIG"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_039_DEAD_ONE_OBJ_PORT_MESSAGE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CHAT_002_YANKEES_DEAD"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CHAT_003_REPAIRBASE_DISABLED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CHAT_005_RAPTOR_DEAD"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CHAT_008_FLAGMANS_SUCCESS"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CHAT_010_SECOND_TASK_03_OPEN"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CSM_001_SQUADRONS_ARRIVED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CSM_002_SQUADRONS_ARRIVED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CSM_003_FREIGHTERS_LOADING"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CSM_004_SECOND_TASK_02_OPEN"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CSM_005_SECOND_TASK_02_ALARM"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CSM_006_SECOND_TASK_04_OPEN"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CSM_007_SECOND_TASK_04_STAY_ON_TARGET"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CSM_009_FINISH_FAIL_2"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CSM_010_FINISH_SUCCESS"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CSM_011_FINISH_FAIL_1"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CSM_012_FINISH_FAIL_3"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CSM_013_RAPTOR_HINT"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CSM_014_RED_ALERT"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_005_MAIN_MESSAGE_3"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_012_TARANSPORTS_IN_PORT"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_014_REMONT_1_ARRIVED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_014_REMONT_1_END_ARRIVED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_020_MESSAGE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_CHAT_005_SECOND_TASK_04_SUCCESS"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_CSM_001_MAIN_MESSAGE_1"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_CSM_001_MAIN_MESSAGE_2"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_CSM_004_MAIN_MESSAGE_TASK_2"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_CSM_007_MAIN_MESSAGE_5"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_CSM_009_MAIN_MESSAGE_7"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_CSM_010_MAIN_MESSAGE_WIN"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_CSM_010_SECOND_TASK_04_HINT"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_CSM_014_MAIN_MESSAGE_WIN"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_CSM_015_TASK_MESSAGE_1_AIRCR"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_CSM_020_MESSAGE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CHAT_IDIOT_1_REMARK_01"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CHAT_IDIOT_1_REMARK_03"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CSM_ACHTUNG_MINEN"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CSM_ALL_PLAYERS_DIE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CSM_ANTI_AIR_HINT"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CSM_DUNKIRK_LOADING"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CSM_FINISH_FAIL"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CSM_FINISH_SUCCESS"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CSM_MAIN_TASK_PHRASE_1"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CSM_MAIN_TASK_PHRASE_2"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_PHASE_01_CSM_AIRSCOUT_DETECTED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_PHASE_02_CSM_AIRSCOUT_DETECTED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_PHASE_03_CSM_SCHNELLBOOT_DETECTED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_PHASE_04_CHAT_CO"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_PHASE_06_CHAT_AHTUNG"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_PHASE_06_CSM_JAMES_W"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "TOPREDO_SOUP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "TRIPLE_KILL"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_ALLY_TRANSP_DETECTED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_ALLY_TRANSP_SUNK"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_CHAT_TEAM_1_MESSAGE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_ENEMY_TRANSP_SUNK"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_LIGHT_LOS_TEAM_0_REASON_1"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_LIGHT_LOS_TEAM_0_REASON_2"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_LIGHT_LOS_TEAM_1_REASON_3"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_LIGHT_LOS_TEAM_1_REASON_4"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_LIGHT_RULE_1_TEAM_0"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_LIGHT_WIN_TEAM_0_REASON_3"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_LIGHT_WIN_TEAM_0_REASON_4"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_LIGHT_WIN_TEAM_1_REASON_1"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_LIGHT_WIN_TEAM_1_REASON_2"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_CHAT_TEAM_0_MESSAGE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_ENEMY_TRANSP_DETECTED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "CONVOY_LIGHT_RULE_1_TEAM_1"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MAIN_TASK_COMPLETED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_01_MAIN_TASK_FAILED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_018_MAIN_TASK_COMPLETE_CARRIER_SAVE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_020_FASTER_THAN_THE_WIND_BEGIN"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_@TRANSPORT_FAILED@"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_@TRANSPORT_IS_DEAD@"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CHAT_@TRANSPORT_UNLOADED@"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CSM_003_RUNNER_GO"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CSM_004_TIME_IS_OVER"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CSM_005_CARRIER_GO_TWO"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_03_CSM_008_TASK_KILL_CARRIERS"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_0021_WARNING_OF_TEAM"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_0021_WARNING_OF_TEAM_1"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_010_MESSAGE_DEAD_ENEMYS_FORTS_1"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_011_ENEMYS_AIRCR_GO_TO_BATTLE_1"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_01_04_0291_ENEMYS_BOSS_2_TEMP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CHAT_001_RAPTOR_SPOTTED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CHAT_004_FORTS_DESTROYED"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CHAT_006_BOMBERS_LOST"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CHAT_007_BOMBERS_SUCCESS"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_02_CHAT_009_FLAGMANS_FAIL"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_03_CHAT_002_SECOND_TASK_04_FAIL"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CHAT_IDIOT_1_REMARK_02"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CHAT_SPEED_MAX"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CHAT_SPEED_MIN"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CSM_AIR_COEFFICIENT"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CSM_AIRSTRIKE_PENALTY_WARNING"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "PVETask",
+							"Value": "OP_02_04_CSM_HELP_ME_OB1"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Quick_Commands",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Quick_Commands",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_THANK_YOU_ALLY_SHIP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ENEMY_PLANE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ALLY_PLANE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NEED_SUPPORT_ALLY_SHIP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NEED_SUPPORT_ALLY_PLANE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_GOOD_GAME_ALLY_SHIP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_BACK_ALLY_SHIP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NEED_SMOKE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NEED_VISION"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_BACK"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NEED_AIR_DEFENCE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ENEMY_BUILDING"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ALLY_BUILDING"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ENEMY_SHIP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ENEMY_POINT"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ENEMY_BASE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ALLY_SHIP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ALLY_POINT"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ALLY_BASE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_THANK_YOU"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NO_WAY"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_AYE_AYE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_CARAMBA"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_GOOD_LUCK"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_GOOD_GAME"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_SOS"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NEED_SUPPORT"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Quick_Commands_Receive",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Quick_Commands_Receive",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_THANK_YOU_ALLY_SHIP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ENEMY_PLANE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ALLY_PLANE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NEED_SUPPORT_ALLY_SHIP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NEED_SUPPORT_ALLY_PLANE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_GOOD_GAME_ALLY_SHIP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_BACK_ALLY_SHIP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NEED_SMOKE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NEED_VISION"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_BACK"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NEED_AIR_DEFENCE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ENEMY_BUILDING"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ALLY_BUILDING"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ENEMY_SHIP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ENEMY_POINT"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ENEMY_BASE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ALLY_SHIP"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ALLY_POINT"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_TACTIC_ALLY_BASE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_THANK_YOU"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NO_WAY"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_AYE_AYE"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_CARAMBA"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_GOOD_LUCK"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_GOOD_GAME"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_SOS"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Quick_Commands",
+							"Value": "CMD_QUICK_NEED_SUPPORT"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Ship_Alarms_Torpedo_Danger",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Ship_Alarms_Torpedo_Danger",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "VO_Torpedo_Location",
+							"Value": "Torpedo_Ahead"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Torpedo_Location",
+							"Value": "Torpedo_Back"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Torpedo_Location",
+							"Value": "Torpedo_Right"
+						}
+					],
+					"File": []
+				},
+				{
+					"State": [
+						{
+							"Name": "VO_Torpedo_Location",
+							"Value": "Torpedo_Left"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Ship_Avatar_Flooding",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Ship_Avatar_Flooding",
+			"Path": [
+				{
+					"State": [
+						{
+							"Name": "VO_Damage",
+							"Value": "VO_Damage_Critical_Flooding"
+						}
+					],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Teamkill_Punishment",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Teamkill_Punishment",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Timer_5",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Timer_5",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		}
+	]
+}
