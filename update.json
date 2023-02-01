@@ -1,11 +1,21 @@
 {
   "version": "beta",
+  "resource": [
+    "delete.json",
+    "modified_eid.json",
+    "multi_state_pilot.json",
+    "multi_state_result.json",
+    "rename.json",
+    "std.json",
+    "TISHINA.wem"
+  ],
   "resource_md5": [
-    "29ddbe0ce9927f7921fa32986eeacb0a",
-    "d059621528e98796e8a772249221f3c9",
-    "20e912e833f2eb810ae5aecbea28e029",
-    "c54ed5521dfcb803ad8e67b3ce71b40a",
-    "3b0196e99575ca457c0c88533329976f",
+    "1d32bf0cf3ca9ffdd6d0e6571464e6ff",
+    "df24649680441456b93e0d351c8fe341",
+    "a97826632fe291682793b1a099c8a121",
+    "2e81930600c4ac3cade56ddcf8fcb53d",
+    "ee514738cdccf1fa8135101ba5616e81",
+    "67721dde05b9d7240c9a75ce6203841e",
     "87d0bba0d64508a6330d4662dd60ba06"
   ]
 }
