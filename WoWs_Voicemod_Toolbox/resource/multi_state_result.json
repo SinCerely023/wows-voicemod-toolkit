@@ -1,12 +1,12 @@
 {
 	"Name": "multi_state_result",
 	"Kernel": "beta",
-	"Version": "0.11.5.0",
+	"Version": "12.1.0.0",
 	"ExternalEvent": [
 		{
-			"Name": "Play_UI_Result_Stinger",
+			"Name": "Play_VO_Result_Stinger",
 			"ContainerName": "Voice",
-			"ExternalId": "VUI_Result_Stinger",
+			"ExternalId": "VVO_Result_Stinger",
 			"Path": [
 				{
 					"State": [

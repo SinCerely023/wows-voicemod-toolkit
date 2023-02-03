@@ -1,7 +1,7 @@
 {
 	"Name": "delete",
 	"Kernel": "beta",
-	"Version": "0.11.5.0",
+	"Version": "12.1.0.0",
 	"ExternalEvent": [
 		{
 			"Name": "Play_VO_Highschool_Fleet_Capture_Fort",

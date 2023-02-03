@@ -1,7 +1,7 @@
 {
 	"Name": "rename",
 	"Kernel": "beta",
-	"Version": "0.11.5.0",
+	"Version": "12.1.0.0",
 	"ExternalEvent": [
 		["Play_GoodHit","Play_VO_Hit_Feedback_Good_Hit"],
 		["Play_Avatar_Damage","Play_VO_Ship_Avatar_Flooding"],
@@ -24,17 +24,31 @@
 		["Play_Capture_Fort","Play_VO_Highschool_Fleet_Capture_Fort"],
 		["Play_TAshot","Play_VO_Highschool_Fleet_TA_shot"],
 		["Play_TorpedoHit","Play_VO_Highschool_Fleet_Torpedo_Hit"],
-		["Play_Result","Play_UI_Result_Stinger"],
-		["Play_Help","Play_UI_Consumable"],
-		["Play_Help_Interrupted","Play_UI_Consumable_Interrupted"],
-		["Play_Help_End","Play_UI_Consumable_End"],
+		["Play_Result","Play_VO_Result_Stinger"],
+		["Play_Help","Play_VO_Consumable"],
+		["Play_Help_Interrupted","Play_VO_Consumable_Interrupted"],
+		["Play_Help_End","Play_VO_Consumable_End"],
 		["Play_LetsBatlle","Play_Start_Battle"],
-		["Play_UI_Defective_Modules","Play_UI_Alarm_Defective_Modules"],
-		["Play_Blue_Stripe","Play_UI_Alarm_Map_Border"],
+		["Play_UI_Defective_Modules","Play_VO_Alarm_Defective_Modules"],
+		["Play_Blue_Stripe","Play_VO_Alarm_Map_Border"],
 		["Play_Death","Play_Damage_Death"],
 		["Play_Detection_enemy","Play_VO_Detection_Enemy"],
 		["Play_Last_Hope","Play_VO_Last_Hope"],
-		["Play_WOWS_Weather_ChangedFXSS","Play_UI_Alarm_Weather_Changed"]
+		["Play_WOWS_Weather_ChangedFXSS","Play_VO_Alarm_Weather_Changed"],
+		["Play_UI_Alarm_Defective_Modules","Play_VO_Alarm_Defective_Modules"],
+		["Play_UI_Alarm_Map_Border","Play_VO_Alarm_Map_Border"],
+		["Play_UI_Alarm_Weather_Changed","Play_VO_Alarm_Weather_Changed"],
+		["Play_UI_Consumable","Play_VO_Consumable"],
+		["Play_UI_Consumable_End","Play_VO_Consumable_End"],
+		["Play_UI_Consumable_Interrupted","Play_VO_Consumable_Interrupted"],
+		["Play_UI_Reload_Air_Support","Play_VO_Reload_Air_Support"],
+		["Play_UI_Result_Stinger","Play_VO_Result_Stinger"],
+		["Play_UI_Alarm_Collision","Play_VO_Alarm_Collision"],
+		["Play_UI_Submarine_Alarm_Energy_Danger","Play_VO_Submarine_Alarm_Energy_Danger"],
+		["Play_UI_Submarine_Detected","Play_VO_Submarine_Detected"],
+		["Play_UI_Submarine_Energy_Full","Play_VO_Submarine_Energy_Full"],
+		["Play_UI_Submarine_Energy_Over","Play_VO_Submarine_Energy_Over"],
+		["Play_UI_Telegraph","Play_VO_Telegraph"]
 	],
 	"State": {
 		"Play_VO_Ship_Avatar_Flooding": [
@@ -67,12 +81,12 @@
 		"Play_VO_Pilots_Status": [
 			["PlaneStatus",null,"VO_Plane_Status",null]
 		],
-		"Play_UI_Result_Stinger": [
+		"Play_VO_Result_Stinger": [
 			["Result","Draw","Battle_Status_Result","Battle_Status_Result_Draw"],
 			["Result","Lose","Battle_Status_Result","Battle_Status_Result_Lose"],
 			["Result","Win","Battle_Status_Result","Battle_Status_Result_Win"]
 		],
-		"Play_UI_Alarm_Defective_Modules": [
+		"Play_VO_Alarm_Defective_Modules": [
 			["ModuleType","Engine","Module_Type","Module_Type_Engine"],
 			["ModuleType","MainGun","Module_Type","Module_Type_MG"],
 			["ModuleType","SteeringWheel","Module_Type","Module_Type_Steering_Wheel"],

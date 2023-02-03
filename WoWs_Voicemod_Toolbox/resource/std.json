@@ -1,7 +1,7 @@
 {
 	"Name": "std",
 	"Kernel": "beta",
-	"Version": "0.11.5.0",
+	"Version": "12.1.0.0",
 	"ExternalEvent": [
 		{
 			"Name": "Play_Damage_Death",
@@ -81,9 +81,9 @@
 			]
 		},
 		{
-			"Name": "Play_UI_Alarm_Defective_Modules",
+			"Name": "Play_VO_Alarm_Defective_Modules",
 			"ContainerName": "Voice",
-			"ExternalId": "VUI_Alarm_Defective_Modules",
+			"ExternalId": "VVO_Alarm_Defective_Modules",
 			"Path": [
 				{
 					"State": [
@@ -153,9 +153,9 @@
 			]
 		},
 		{
-			"Name": "Play_UI_Alarm_Map_Border",
+			"Name": "Play_VO_Alarm_Map_Border",
 			"ContainerName": "Voice",
-			"ExternalId": "VUI_Alarm_Map_Border",
+			"ExternalId": "VVO_Alarm_Map_Border",
 			"Path": [
 				{
 					"State": [],
@@ -164,9 +164,9 @@
 			]
 		},
 		{
-			"Name": "Play_UI_Alarm_Weather_Changed",
+			"Name": "Play_VO_Alarm_Weather_Changed",
 			"ContainerName": "Voice",
-			"ExternalId": "VUI_Alarm_Weather_Changed",
+			"ExternalId": "VVO_Alarm_Weather_Changed",
 			"Path": [
 				{
 					"State": [
@@ -189,9 +189,9 @@
 			]
 		},
 		{
-			"Name": "Play_UI_Consumable",
+			"Name": "Play_VO_Consumable",
 			"ContainerName": "Voice",
-			"ExternalId": "VUI_Consumable",
+			"ExternalId": "VVO_Consumable",
 			"Path": [
 				{
 					"State": [
@@ -250,9 +250,9 @@
 			]
 		},
 		{
-			"Name": "Play_UI_Consumable_End",
+			"Name": "Play_VO_Consumable_End",
 			"ContainerName": "Voice",
-			"ExternalId": "VUI_Consumable_End",
+			"ExternalId": "VVO_Consumable_End",
 			"Path": [
 				{
 					"State": [
@@ -311,9 +311,9 @@
 			]
 		},
 		{
-			"Name": "Play_UI_Consumable_Interrupted",
+			"Name": "Play_VO_Consumable_Interrupted",
 			"ContainerName": "Voice",
-			"ExternalId": "VUI_Consumable_Interrupted",
+			"ExternalId": "VVO_Consumable_Interrupted",
 			"Path": [
 				{
 					"State": [
@@ -336,9 +336,9 @@
 			]
 		},
 		{
-			"Name": "Play_UI_Reload_Air_Support",
+			"Name": "Play_VO_Reload_Air_Support",
 			"ContainerName": "Voice",
-			"ExternalId": "VUI_Reload_Air_Support",
+			"ExternalId": "VVO_Reload_Air_Support",
 			"Path": [
 				{
 					"State": [],
@@ -347,9 +347,9 @@
 			]
 		},
 		{
-			"Name": "Play_UI_Result_Stinger",
+			"Name": "Play_VO_Result_Stinger",
 			"ContainerName": "Voice",
-			"ExternalId": "VUI_Result_Stinger",
+			"ExternalId": "VVO_Result_Stinger",
 			"Path": [
 				{
 					"State": [],
@@ -358,9 +358,9 @@
 			]
 		},
 		{
-			"Name": "Play_UI_Submarine_Alarm_Energy_Danger",
+			"Name": "Play_VO_Submarine_Alarm_Energy_Danger",
 			"ContainerName": "Voice",
-			"ExternalId": "VUI_Submarine_Alarm_Energy_Danger",
+			"ExternalId": "VVO_Submarine_Alarm_Energy_Danger",
 			"Path": [
 				{
 					"State": [],
@@ -369,9 +369,9 @@
 			]
 		},
 		{
-			"Name": "Play_UI_Submarine_Detected",
+			"Name": "Play_VO_Submarine_Detected",
 			"ContainerName": "Voice",
-			"ExternalId": "VUI_Submarine_Detected",
+			"ExternalId": "VVO_Submarine_Detected",
 			"Path": [
 				{
 					"State": [],
@@ -380,9 +380,9 @@
 			]
 		},
 		{
-			"Name": "Play_UI_Submarine_Energy_Full",
+			"Name": "Play_VO_Submarine_Energy_Full",
 			"ContainerName": "Voice",
-			"ExternalId": "VUI_Submarine_Energy_Full",
+			"ExternalId": "VVO_Submarine_Energy_Full",
 			"Path": [
 				{
 					"State": [],
@@ -391,9 +391,9 @@
 			]
 		},
 		{
-			"Name": "Play_UI_Submarine_Energy_Over",
+			"Name": "Play_VO_Submarine_Energy_Over",
 			"ContainerName": "Voice",
-			"ExternalId": "VUI_Submarine_Energy_Over",
+			"ExternalId": "VVO_Submarine_Energy_Over",
 			"Path": [
 				{
 					"State": [],
@@ -3667,6 +3667,17 @@
 			"Name": "Play_VO_Teamkill_Punishment",
 			"ContainerName": "Voice",
 			"ExternalId": "VVO_Teamkill_Punishment",
+			"Path": [
+				{
+					"State": [],
+					"File": []
+				}
+			]
+		},
+		{
+			"Name": "Play_VO_Telegraph",
+			"ContainerName": "Voice",
+			"ExternalId": "VVO_Telegraph",
 			"Path": [
 				{
 					"State": [],
