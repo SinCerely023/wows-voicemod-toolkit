@@ -11,9 +11,8 @@
     "multi_state_result.json",
     "rename.json",
     "std.json",
-    "TISHINA.wem"
+    "TISHINA.wem",
+    "wowsunpack.exe"
   ],
-  "unpack_md5": "f4e25667defa045eaafe0972a951606f",
-  "update_url": "https://raw.githubusercontent.com/SinCerely023/wows-voicemod-toolkit/main/",
-  "update_url_unpack": ""
+  "update_url": "https://raw.githubusercontent.com/SinCerely023/wows-voicemod-toolkit/main/"
 }

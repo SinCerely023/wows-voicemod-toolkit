@@ -48,7 +48,14 @@
 		["Play_UI_Submarine_Detected","Play_VO_Submarine_Detected"],
 		["Play_UI_Submarine_Energy_Full","Play_VO_Submarine_Energy_Full"],
 		["Play_UI_Submarine_Energy_Over","Play_VO_Submarine_Energy_Over"],
-		["Play_UI_Telegraph","Play_VO_Telegraph"]
+		["Play_UI_Telegraph","Play_VO_Telegraph"],
+		["Play_Damage_Death","Play_VO_Damage_Death"],
+		["Play_Ship_Weapon_AirSupport_Shot","Play_VO_Ship_Weapon_AirSupport_Shot"],
+		["Play_Ship_Weapon_DC_Roll_Shot","Play_VO_Ship_Weapon_DC_Roll_Shot"],
+		["Play_Ship_Weapon_DC_Shoot_Shot","Play_VO_Ship_Weapon_DC_Shoot_Shot"],
+		["Play_Ship_Weapon_DC_Slide_Shot","Play_VO_Ship_Weapon_DC_Slide_Shot"],
+		["Play_Start_Battle","Play_VO_Start_Battle"],
+		["Play_Submarine_Dive_Limit","Play_VO_Submarine_Dive_Limit"]
 	],
 	"State": {
 		"Play_VO_Ship_Avatar_Flooding": [
