@@ -1,6 +1,6 @@
 {
 	"Name": "rename",
-	"Kernel": "beta",
+	"Kernel": "1.0.0.0",
 	"Version": "12.1.0.0",
 	"ExternalEvent": [
 		["Play_GoodHit","Play_VO_Hit_Feedback_Good_Hit"],
