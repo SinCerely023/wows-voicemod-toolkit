@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0.0",
+  "version": "1.1.0.0",
   "forum_url_asia": "https://worldofwarships.asia/",
   "forum_url_na": "https://worldofwarships.com/",
   "file": {
@@ -9,9 +9,9 @@
       "zh_CN.json"
     ],
     "language_md5": [
-      "a46b9fbb214687db35f64a72d08f883c",
-      "e6ee9229088560fb0ddfd332d50fa759",
-      "bba4d7a9202018476db2777d1427ea24"
+      "12373b1ce47e2be4a94bafd1046ff9cb",
+      "a51811a1626f0817062d4c94add374b7",
+      "98d310dcf5cab786773727dc4fe601d8"
     ],
     "resource": [
       "delete.json",
