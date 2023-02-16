@@ -4,15 +4,22 @@
   "game_version_compatible": "12.1.0.0",
   "forum_url_asia": "https://worldofwarships.asia/",
   "forum_url_na": "https://worldofwarships.com/",
-  "resource": [
-    "delete.json",
-    "modified_eid.json",
-    "multi_state_pilot.json",
-    "multi_state_result.json",
-    "rename.json",
-    "std.json",
-    "TISHINA.wem",
-    "wowsunpack.exe"
-  ],
+  "file": {
+    "language": [
+      "en_US.json",
+      "ja_JP.json",
+      "zh_CN.json"
+    ],
+    "resource": [
+      "delete.json",
+      "modified_eid.json",
+      "multi_state_pilot.json",
+      "multi_state_result.json",
+      "rename.json",
+      "std.json",
+      "TISHINA.wem",
+      "wowsunpack.exe"
+    ]
+  },
   "update_url": "https://raw.githubusercontent.com/SinCerely023/wows-voicemod-toolkit/main/"
 }

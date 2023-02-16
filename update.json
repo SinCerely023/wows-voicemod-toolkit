@@ -2,24 +2,36 @@
   "version": "1.0.0.0",
   "forum_url_asia": "https://worldofwarships.asia/",
   "forum_url_na": "https://worldofwarships.com/",
-  "resource": [
-    "delete.json",
-    "modified_eid.json",
-    "multi_state_pilot.json",
-    "multi_state_result.json",
-    "rename.json",
-    "std.json",
-    "TISHINA.wem",
-    "wowsunpack.exe"
-  ],
-  "resource_md5": [
-    "0ce27183034dc2450bc516a80087fdf9",
-    "94f873e9e814d2aa498c21b41b0535bd",
-    "98a703af74ffcdf008cd2f217ea89a1c",
-    "18890e25b2380493ef661df1f7cae9cd",
-    "6d68e916652563491bb338e34272f697",
-    "564ff4bd50f7942bedb61ec72d848a75",
-    "87d0bba0d64508a6330d4662dd60ba06",
-    "f4e25667defa045eaafe0972a951606f"
-  ]
+  "file": {
+    "language": [
+      "en_US.json",
+      "ja_JP.json",
+      "zh_CN.json"
+    ],
+    "language_md5": [
+      "a46b9fbb214687db35f64a72d08f883c",
+      "e6ee9229088560fb0ddfd332d50fa759",
+      "bba4d7a9202018476db2777d1427ea24"
+    ],
+    "resource": [
+      "delete.json",
+      "modified_eid.json",
+      "multi_state_pilot.json",
+      "multi_state_result.json",
+      "rename.json",
+      "std.json",
+      "TISHINA.wem",
+      "wowsunpack.exe"
+    ],
+    "resource_md5": [
+      "0ce27183034dc2450bc516a80087fdf9",
+      "94f873e9e814d2aa498c21b41b0535bd",
+      "98a703af74ffcdf008cd2f217ea89a1c",
+      "18890e25b2380493ef661df1f7cae9cd",
+      "6d68e916652563491bb338e34272f697",
+      "564ff4bd50f7942bedb61ec72d848a75",
+      "87d0bba0d64508a6330d4662dd60ba06",
+      "f4e25667defa045eaafe0972a951606f"
+    ]
+  }
 }

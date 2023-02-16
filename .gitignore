@@ -5,6 +5,7 @@
 /WoWs_Voicemod_Toolbox/*
 !/WoWs_Voicemod_Toolbox/version.json
 !/WoWs_Voicemod_Toolbox/resource
+!/WoWs_Voicemod_Toolbox/language
 
 # pycharm
 /.idea
